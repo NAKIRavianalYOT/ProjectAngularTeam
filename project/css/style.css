@@ -1,1 +1,435 @@
-/* Сюда можем импортировать все css-файлы и подключить только этот один к html-файлу */
+@import url('./reset.css');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 200px;
+    margin-top: 60px;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 157px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__logo-img {
+    width: 23px;
+    height: 29px;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 28px;
+    color: #202020;
+}
+
+.header-right-form {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: auto;
+}
+
+.header-form-search {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 49px;
+    padding: 0 25px;
+    border: 1px solid rgba(128, 128, 128, 1);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 0.75;
+}
+
+.header-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    color: rgba(128, 128, 128, 1);
+}
+
+.search-btn {
+    right: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header-bag-icon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.header__sign-in {
+    height: 49px;
+    display: flex;
+    align-items: center;
+    padding: 16px 25px 16px 25px;
+    border-radius: 10px;
+    background: rgba(32, 32, 32, 1);
+}
+
+.header__sign-in:hover {
+    background-color: rgba(252, 128, 25, 1);
+    transition: 0.5s;
+}
+
+.header__sign-in-text {
+    color: rgba(253, 251, 250, 1);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.hero-section {
+    margin-bottom: 238px;
+}
+
+.hero-content {
+    max-width: 150px;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.hero-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.headline-section {
+    width: 790px;
+    height: 270px;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-title-primary {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.5em;
+    color: #202020;
+    margin-bottom: 0;
+}
+
+.title-line-with-icon {
+    position: relative;
+    width: 790px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.title-text-part {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 396px;
+    height: 90px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.5em;
+    color: #202020;
+}
+
+.title-text-accent {
+    position: absolute;
+    left: 561px;
+    top: 0;
+    width: 229px;
+    height: 90px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.5em;
+    color: #FC8019;
+}
+
+.title-icon-decoration {
+    position: absolute;
+    left: 416px;
+    top: 8px;
+    width: 125px;
+    height: 75px;
+    background-color: #FFEDD0;
+    border-radius: 50px;
+    padding: 20px 50px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.decoration-icon-banana,
+.decoration-icon-apple {
+    width: 47.49px;
+    height: 45px;
+    transition: 1.2s;
+}
+
+.decoration-icon-banana:hover {
+    transform: translateX(50px);
+}
+
+.decoration-icon-apple:hover {
+    transform: translateY(25px);
+}
+
+.title-line-with-icon-secondary {
+    position: relative;
+    width: 472px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.title-icon-decoration-secondary {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 125px;
+    height: 75px;
+    background-color: #FFD0D0;
+    border-radius: 50px;
+    padding: 0 50px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-text-accent-secondary {
+    position: absolute;
+    left: 145px;
+    top: 0;
+    width: 327px;
+    height: 90px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.5em;
+    color: #FC8019;
+}
+
+.hero-images {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-image-primary {
+    width: 400px;
+    height: 600px;
+    flex-shrink: 0;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.headline-section {
+    width: 790px;
+    height: 270px;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.5em;
+    color: #202020;
+    margin-bottom: 0;
+}
+
+.hero-title__part {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.5em;
+    color: #202020;
+}
+
+.hero-title__accent {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.5em;
+    color: #FC8019;
+}
+
+.hero-title__accent--secondary {
+    color: #FC8019;
+}
+
+.hero-title__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.hero-title__icon--banana {
+    background-color: #FFEDD0;
+    padding: 20px 50px 20px 0;
+}
+
+.hero-title__icon--apple {
+    background-color: #FFD0D0;
+    padding: 0 50px 20px;
+}
+
+
+.hero-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5625em;
+    color: #404040;
+    width: 712px;
+}
+
+.hero-search-section {
+    display: flex;
+    gap: 20px;
+}
+
+.location-input-wrapper {
+    width: 622px;
+    height: auto;
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    padding: 16px 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.location-search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #808080;
+    background: transparent;
+}
+
+.location-search-input::placeholder {
+    color: #808080;
+}
+
+.cta-button {
+    padding: 16px 25px;
+    background-color: #202020;
+    color: #FDFBFA;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: rgba(252, 128, 25, 1);
+    transition: 0.5s;
+}
+
+.popular-cities-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cities-section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #404040;
+}
+
+.cities-list {
+    display: flex;
+    gap: 20px;
+}
+
+
+.city-item {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #808080;
+    cursor: pointer;
+}
+
+
+.city-item--active {
+    color: rgba(252, 128, 25, 0.75);
+}
+
+
+.hero-left-vector {
+    position: absolute;
+    background-image: url('/project/img/hero-left-vector.svg');
+    background-repeat: no-repeat;
+    width: 389px;
+    height: 430px;
+    z-index: 0;
+    left: 0;
+    bottom: -150px;
+    pointer-events: none;
+}
