@@ -1,3 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 55px;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(248, 248, 248, 1);
+}
+
+/* ================================ */
+
+.food-selection {
+  margin-bottom: 186px;
+}
+
+.meal-selection {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+.food-selection__choice {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 102px;
+}
+
+.food-selection__choice-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.food-selection__choice-item {
+  display: flex;
+  row-gap: 20px;
+}
+
+.food-selection__choice-item > span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ================================ */
+
+.recommended-positions {
+  display: flex;
+  column-gap: 97.33px;
+  margin-bottom: 158px;
+}
+
+.recommended-positions__card {
+  width: 307px;
+  height: 474px;
+  border-radius: 10px;
+  background: rgba(248, 248, 248, 1);
+  padding: 25px;
+}
+
+.positions-card__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.positions-card__desc {
+  display: block;
+  color: rgba(128, 128, 128, 1);
+}
+
+.positions-card__title, .positions-card__desc, .container__price-time {
+  padding-top: 20px;
+}
+
+.container__price-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__price, .container__time, .site-logo, .navigation-elements, .contact-info {
+  display: flex;
+  column-gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ================================ */
+
+.footer {
+  height: 313px;
+  background: rgba(252, 128, 25, 1);
+  text-align: center;
+  align-items: center;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 113px;
+  margin-bottom: 31px;
+}
+
+.site-logo > span {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.navigation-elements {
+  column-gap: 60px;
+}
+
+.contact-info > span {
+  font-size: 14px;
+}
+
+.site-logo, .navigation-elements, .contact-info {
+  display: flex;
+  align-items: center;
+  vertical-align: initial;
+  color: rgba(255, 255, 255, 1);
+}
+
+.container__social-media {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.container__social-media img {
+  width: 22px;
+  height: 22px;
 @import url('./reset.css');
 
 body {
